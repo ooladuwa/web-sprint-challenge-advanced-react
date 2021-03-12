@@ -20,7 +20,7 @@ test("form shows success message on submit with form details", async () => {
 
   // ACT:
   // // find all inputs:
-  const firstName = screen.fingByLabelText(/firstName:/i);
+  const firstName = screen.findByLabelText(/firstName:/i);
   const lastName = screen.getByLabelText(/last name:/i);
   const address = screen.getByLabelText(/address:/i);
   const city = screen.getByLabelText(/city:/i);
