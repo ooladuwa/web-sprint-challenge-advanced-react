@@ -14,13 +14,13 @@ test("form header renders", () => {
   expect(header).toBeInTheDocument();
 });
 
-test("form shows success message on submit with form details", async () => {
+test("form shows success message on submit with form details", () => {
   // ARRANGE -
   render(<CheckoutForm />);
 
   // ACT:
   // // find all inputs:
-  const firstName = screen.findByLabelText(/firstName:/i);
+  // const firstName = screen.findByLabelText(/firstName:/i);
   const lastName = screen.getByLabelText(/last name:/i);
   const address = screen.getByLabelText(/address:/i);
   const city = screen.getByLabelText(/city:/i);
